@@ -1,0 +1,8 @@
+{
+    "name": "CortonaVoice",
+    "short_name": "CortonaVoice",
+    "icons": [],
+    "start_url": "/index.htm",
+    "display": "standalone"
+  }
+  
