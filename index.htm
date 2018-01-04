@@ -7,16 +7,19 @@
 </head>
 
 <body>
-Cortona Voice 1
+<p id="id">DEMO</p>
+<p id="uwp">DEMO</p>
 
 <script>
-alert("Start Initializing...");
+document.getElementById('id').innerHTML = "Cortana Voice";
 
 if (typeof Windows !== 'undefined') {
     // Subscribe to the Windows Activation Event
     Windows.UI.WebUI.WebUIApplication.addEventListener("activated", function (args) {
-        alert("activated.");
+		document.getElementById('uwp').innerHTML = "UWP Activated";
     });
+} else {
+	document.getElementById('uwp').innerHTML = "UWP Not Supported";
 }
 </script>
 </body>
